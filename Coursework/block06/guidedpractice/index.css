@@ -1,0 +1,14 @@
+.table{
+    margin: 5px;
+    padding: 2px 3px 3px 3px; 
+    border: 3px solid black;
+}
+
+p{
+    color:orange;
+}
+
+tr{
+    padding: 200px;
+}
+
