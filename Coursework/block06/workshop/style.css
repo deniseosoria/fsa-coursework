@@ -8,11 +8,20 @@
     height: 200px;
 }
 
+#img-pantry,
+#img-frozen {
+
+    background-color: transparent;
 
 
-h1 {
-    font-size: 30px;
 }
+
+img {
+    width: 250px;
+    height: 200px;
+    margin-bottom: -55px;
+}
+
 
 h2 {
     background-color: beige;
