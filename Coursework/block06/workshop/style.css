@@ -1,25 +1,26 @@
 .pantry-items,
-.frozen-items {
+.freezer-items {
     display: inline-block;
     background-color: rgb(201, 198, 198);
     padding: 10px;
     margin: 0px 15px 15px 15px;
     width: 250px;
     height: 200px;
+    border: 1px solid black
 }
 
 #img-pantry,
 #img-frozen {
 
     background-color: transparent;
-
-
+    padding: 5px;
 }
 
 img {
     width: 250px;
     height: 200px;
     margin-bottom: -55px;
+    
 }
 
 
