@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gridblock{
+            display: grid;
+            /* grid-template-areas: 'username username username username'
+            'password password number number'
+            'checkbox checkbox checkbox checbox'; */
+            gap: 5px;
+            padding: 2px;
+
+            .username{
+                grid-area: username;
+                background-color: purple;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form class="gridblock" >
+            <label htmlFor="Username">Username</label>
+            <input type="text" name="Username" maxlength="3" />
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" required>
+    </div>
+
+
+    <div class="purple">
+        <label for="numbers">Numbers</label>
+        <input type="number" name="numbers" min="10" max="100">
+    </div>
+
+    <div>
+        <label for="Checkbox">Checkbox</label>
+        <input type="checkbox" name="checkbox"> hello1
+        <input type="checkbox" name="checkbox"> hello2
+        <input type="checkbox" name="checkbox"> hello3
+        <input type="checkbox" name="checkbox"> hello3
+    </div>
+
+    <div>
+        <label for="radio">Radio</label>
+        <input type="radio" name="radio"> radio
+    </div>
+
+
+    <div <label for="TextArea">TextArea</label>
+        <textarea></textarea>
+    </div>
+
+    <div>
+        <select name="" id="">
+            <option value="">hello1</option>
+            <option value="">hello2</option>
+            <option value="">hello3</option>
+            <option value="">hello4</option>
+        </select>
+    </div>
+
+    <div>
+        <input type="submit">
+    </div>
+    </form>
+</body>
+
+</html>
