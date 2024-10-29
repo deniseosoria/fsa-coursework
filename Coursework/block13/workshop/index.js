@@ -27,10 +27,8 @@ function createMessage(fahrenheit) {
     } else {
         message = "So it feels very hot.";
     }
-    
-    
-    // return `Result: ${fahrenheit} Fahrenheit is ${celsius.toFixed(2)} Celsius. ${message}`;
 
+    console.log("Result: " + fahrenheit + "°F is " + celsius.toFixed(2) + "°C. " + message);
     alert("Result: " + fahrenheit + "°F is " + celsius.toFixed(2) + "°C. " + message);
 }
 
