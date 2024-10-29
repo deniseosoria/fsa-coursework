@@ -22,10 +22,10 @@ function createMessage(fahrenheit) {
 
     if (numFahrenheit < 65) {
         message = `So it feels cold.`;
-    } else if (numFahrenheit > 80) {
+    } else if (numFahrenheit < 100) {
         message = `So it feels hot.`;
     } else {
-        message = `So it feels just right.`;
+        message = `So it feels very hot.`;
     }
     
     
