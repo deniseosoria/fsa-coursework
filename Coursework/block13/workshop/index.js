@@ -17,15 +17,15 @@ function createMessage(fahrenheit) {
 
     let message;
 
-    //This is to make sure the variable is a number.
+    //Multiphy variable by 1 to make sure variable is a number.
     let numFahrenheit = fahrenheit*1;
 
     if (numFahrenheit < 65) {
-        message = `So it feels cold.`;
+        message = "So it feels cold.";
     } else if (numFahrenheit < 100) {
-        message = `So it feels hot.`;
+        message = "So it feels hot.";
     } else {
-        message = `So it feels very hot.`;
+        message = "So it feels very hot.";
     }
     
     
