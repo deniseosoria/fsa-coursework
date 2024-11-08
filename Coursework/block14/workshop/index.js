@@ -11,11 +11,12 @@ const userInputString = prompt(
 const stringArray = userInputString.split(",");
 
 // Convert the array of strings into an array of numbers.
-const numbers = [];
-for (let i = 0; i < stringArray.length; i++) {
-    const str = stringArray[i];
-    const number = parseInt(str);
-    numbers.push(number);
+const numbers = [];  // Initialize an empty array to store numbers.
+
+for (i = 0; i < stringArray.length; i++) {  // Loop through each element in stringArray.
+    const str = stringArray[i];  // Get the current element in stringArray and store it in str.
+    const number = parseInt(str);  // Convert str from a string to an integer using parseInt.
+    numbers.push(number);  // Add the converted number to the numbers array.
 }
 
 // Peform some calculations on the numbers.
