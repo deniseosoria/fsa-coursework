@@ -6,6 +6,7 @@ const SignUpForm = ({ setToken }) => {
   const [userName, setUserName] = useState("");
   const [password, setPassWord] = useState("");
   const [error, setError] = useState(null);
+  const [successMessage, setSuccessMessage] = useState(null);
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -27,6 +28,8 @@ const SignUpForm = ({ setToken }) => {
       }
 
       setToken(result.token); // Set the token only if no error
+      setSuccessMessage(result.message); // Update success message
+
       console.log("Signup successful:", result);
     } catch (error) {
       console.error("Signup failed:", error);
@@ -38,6 +41,9 @@ const SignUpForm = ({ setToken }) => {
     <div>
       <h2>Sign Up</h2>
       {error && <p style={{ color: "red" }}>{error}</p>} {/* Display error */}
+      {successMessage && (
+        <p style={{ color: "green" }}>{successMessage}</p> /* Display success */
+      )}
       <form onSubmit={handleSubmit}>
         <div className="input-container">
           <div className="input-with-icon">
